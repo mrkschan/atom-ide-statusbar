@@ -1,0 +1,34 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.atom-ide-statusbar.func-info {
+    &:before {
+        content: "[";
+        margin-right: 1px;
+    }
+    &:after {
+        content: "]";
+        margin-left: 1px;
+    }
+
+    span + span {
+        &:before {
+            content: ">";
+            margin: 0 3px;
+        }
+    }
+}
+
+.atom-ide-statusbar.func-info.blank {
+    &:before {
+        content: "";
+        margin: 0;
+    }
+    &:after {
+        content: "";
+        margin: 0;
+    }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "atom-ide-statusbar",
+  "main": "./dist/main",
+  "version": "0.0.2",
+  "description": "Show the class/function/scope hierarchy of the current line on the status bar, using outline obtained from Language Server Protocol.",
+  "repository": "https://github.com/mrkschan/atom-ide-statusbar",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p src/ --outDir dist/"
+  },
+  "dependencies": {
+    "atom-ide-base": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/atom": "^1.40.10",
+    "typescript": "^4.2.3"
+  },
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "consumeOutlineProvider"
+      }
+    }
+  },
+  "package-deps": [
+    {
+      "name": "status-bar"
+    }
+  ],
+  "keywords": [
+    "scope",
+    "symbol",
+    "status-bar",
+    "lsp",
+    "atom-ide"
+  ]
+}

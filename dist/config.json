@@ -1,0 +1,15 @@
+{
+    "statusbarPriority": {
+        "title": "Statusbar priority",
+        "description": "The priority of the scope name on the status bar. Lower priority leans toward the side.",
+        "type": "integer",
+        "default": 1,
+        "minimum": -1
+    },
+    "outerScope": {
+        "title": "Show outer/parent scope(s)",
+        "description": "Show all scope(s) on current line.",
+        "type": "boolean",
+        "default": true
+    }
+}
