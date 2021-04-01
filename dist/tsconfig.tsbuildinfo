@@ -807,7 +807,7 @@
         "affectsGlobalScope": true
       },
       "../src/main.ts": {
-        "version": "691287ea15fc5cd3c83b79597732b733fef861ea607c126275100b8a75310ece",
+        "version": "7c6154ce93d292438e9e7916e7a5fe3d1913631c625f5682fdefce5b561cc1f8",
         "signature": "a1cff2227fe33adaeecbe4b1cfde39339926498bf10136a8de2b5ab9222ec1a3",
         "affectsGlobalScope": false
       },

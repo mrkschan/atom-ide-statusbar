@@ -114,6 +114,12 @@ async function toggle() {
                 outlineStatusView?.addText((tree!.representativeName || tree!.plainText) ?? "")
             }
 
+            if (tree!.children.length == 0) {
+                // We're now at the leaf node of the tree covering the current line,
+                // there is no value to continue the DFS on other silbling trees.
+                break
+            }
+
             for (let i = 0; i < tree!.children.length; i++) {
                 stack.push(tree!.children[i])
             }
